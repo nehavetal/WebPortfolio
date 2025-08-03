@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neha Vetal | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color:  #1f1f2e;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f2e;
+    }
+
+    .navbar-brand {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #dcdcdc !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #00bcd4 !important;
+    }
+
+    .home-section {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #181828;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00bcd4;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+    }
+
+    .home-section h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .home-section p {
+      font-size: 1.1rem;
+      margin-top: 20px;
+      color: #cccccc;
+    }
+
+    .btn-primary {
+      margin-top: 25px;
+      padding: 10px 25px;
+      font-size: 1rem;
+      border: none;
+      background-color: #00bcd4;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #019aaa;
+    }
+
+    .social-icons a {
+      color: #f1f1f1;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+
+    footer {
+      background-color: #1f1f2e;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+      <a class="navbar-brand" href="#">Neha Ramesh Vetal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="home-section">
+    <img src="img.jpg" alt="Neha Vetal Profile Picture" class="profile-pic">
+    <h1>Hi, I'm Neha Vetal!</h1>
+    <p>A passionate Web Developer, Java Programmer, and SQL Enthusiast.</p>
+    <p>
+      I enjoy creating clean, responsive websites and full-stack applications.<br>
+      My expertise includes HTML, CSS, JavaScript, Java, Spring Boot,JSP and MySQL.
+    </p>
+    <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+
+    <div class="social-icons mt-4">
+      <a href="https://github.com/nehavetal" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/neha-vetal-12a1b1314/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:nehvetal520@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Neha Vetal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

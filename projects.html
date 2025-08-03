@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1f1f2e;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1f1f2e;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+
+    .header {
+      background-color: #1f1f2e;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: #ffffff;
+      padding: 30px 25px;
+      border-radius: 16px;
+      transition: all 0.35s ease;
+      box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.05),
+        0 8px 24px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.15),
+        0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h4 {
+      color: #1f1f2e;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .project-card p {
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .tech-badge {
+      background-color: #e7f1ff;
+      color: #1f1f2e;
+      border-radius: 5px;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      margin: 2px 4px 0 0;
+      display: inline-block;
+      transition: background-color 0.2s ease;
+    }
+
+    .tech-badge:hover {
+      background-color: #d0e9ff;
+    }
+
+    @media (max-width: 576px) {
+      .header h2 {
+        font-size: 2rem;
+      }
+
+      .project-card {
+        padding: 25px 20px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+      <a class="navbar-brand" href="#">Neha Ramesh Vetal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container my-5">
+  <div class="bg-light rounded shadow p-5 text-center">
+    <h2 class="text-dark mb-3">
+      <span class="ms-2">My Projects</span>
+    </h2>
+    <p class="text-muted mb-0">A showcase of my recent work and hands-on learning projects.</p>
+  </div>
+</div>
+
+
+  <section class="project-container">
+
+    <div class="project-card">
+      <h4>Restaurant Website</h4>
+      <p>Responsive food ordering site with modern UI and clean layout.</p>
+      <div>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Personal Finance Tracker</h4>
+      <p>Java app to track income, expenses, and view monthly reports.</p>
+      <div>
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">OOP</span>
+        <span class="tech-badge">Collections</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Student Management System</h4>
+      <p>Manage student records with full CRUD operations and DB sync.</p>
+      <div>
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">JSP</span>
+        <span class="tech-badge">MySQL</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Product Management (E-Commerce)</h4>
+      <p>E-commerce platform for managing products and filtering by category.</p>
+      <div>
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">MySQL</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Book Management System</h4>
+      <p>System to handle book inventory and track borrowers efficiently.</p>
+      <div>
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">JSP</span>
+        <span class="tech-badge">MySQL</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Netflix Clone</h4>
+      <p>Landing page inspired by Netflix with modern animations and layout.</p>
+      <div>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Ruby Hall Clinic Clone</h4>
+      <p>Healthcare web page with services, departments, and booking features.</p>
+      <div>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h4>Image Gallery</h4>
+      <p>Responsive grid-based gallery with hover zoom and filter categories.</p>
+      <div>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Bootstrap</span>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
